@@ -199,7 +199,137 @@ p {
     margin-bottom: 0;
 }
 
-/******************/
-/* Responsiveness */
-/******************/
+/**********************************/
+/* Media Queries - Responsiveness */
+/**********************************/
 
+/*******************/
+/*  Large devices  */
+/*******************/
+
+@media (max-width: 992px) {
+    /* Nothing here, because this project was maked in desktop first design */
+}
+
+/********************/
+/*  Medium devices  */
+/********************/
+
+@media (max-width: 800px) {
+    /* Nothing here, because the page layout behaved well at this screen size */
+}
+
+/*******************/
+/*  Small devices  */
+/*******************/
+
+@media (max-width: 500px) {
+
+    /***********/
+    /* General */
+    /***********/
+
+    img {
+        width: 80%;
+    }
+
+    /********/
+    /* Page */
+    /********/
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .content p, ul {
+        width: 70%;
+    }
+
+    /***************/
+    /* Navbar/Menu */
+    /***************/
+
+    .h1_title {
+        width: 80%;
+        text-align: center; 
+        margin-left: 0;
+    }
+    
+    .navbar_menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 0.5rem;
+        padding-bottom: 0.2rem;
+    }
+    
+    .menu {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        width: 90%;
+        justify-content: space-between;
+    }
+    
+    .menu_item {
+        margin-bottom: 1rem;
+    }
+
+    /*********/
+    /* About */
+    /*********/
+
+    #about p {
+        border-top: none;
+        border-right: none;
+        border-left: solid;
+        border-bottom: solid;
+        border-bottom-left-radius: 0.5rem;
+        border-color: #F2CB05;
+    }
+
+    /***************/
+    /* Curiosities */
+    /***************/
+
+    #curiosities .c-1 p {
+        border-top: none;
+        border-right: solid;
+        border-bottom: solid;
+        border-color: #F2CB05;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0.5rem;
+    }
+    
+    #curiosities .c-2 p {
+        border-bottom: none;
+        border-left: solid;
+        border-top: solid;
+        border-color: #F2CB05;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    /***********/
+    /* Contact */
+    /***********/
+
+    #contact .h2_title, ul {
+        margin-top: 0.7rem;
+    }
+
+    #contact ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #contact ul li {
+        width: 35%;
+    }
+
+    #contact ul #text {
+        margin-top: 0.5rem;
+        width: 100%;
+        margin-right: 0;
+    }
+}
